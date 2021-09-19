@@ -23,7 +23,7 @@ Bot = Client(
 @Bot.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
     await update.reply_text(
-        text=f"Hello {update.from_user.mention}, \n\n`Iam A Simple Gofiles Uploader Bot. Send Me Any File Or Media To Get` __gofile.io__ `Stream Link`\n\n**Made With ❤ BY @BX_Botz**",
+        text=f"Hello {update.from_user.mention}, \n\n`Iam A Simple Gofiles Uploader Bot. Send Me Any File Or Media To Get` gofile.io `Stream Link`\n\n**Made With ❤ BY @BX_Botz**",
         reply_markup=START_BUTTONS,
         disable_web_page_preview=True,
         quote=True
@@ -84,7 +84,7 @@ START_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton("🤖 Update Channel", url="https://t.me/BX_Botz"),
         InlineKeyboardButton("🎨 Support Group", url="https://t.me/BXSUPPORT")
         ],[
-        InlineKeyboardButton("🧩 Other Bots", url="https://t.me/BX_Botz/"),
+        InlineKeyboardButton("🧩 Other Bots", url="https://t.me/BX_Botz/31"),
         InlineKeyboardButton("Close 🔒", callback_data="close")
         ]]
     )

@@ -23,7 +23,7 @@ Bot = Client(
 @Bot.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
     await update.reply_text(
-        text=f"Hello {update.from_user.mention}, Please send a media for gofile.io stream link.\n\nMade by @FayasNoushad",
+        text=f"Hello {update.from_user.mention}, `Iam A Simple Gofiles Uploader Bot. Send Me Any File Or Media To Get` __gofile.io__ `Stream Link`\n\n**Made With ❤ BY @BX_Botz**",
         disable_web_page_preview=True,
         quote=True
     )
@@ -34,7 +34,7 @@ async def media_filter(bot, update):
     medianame = DOWNLOAD_LOCATION + str(update.from_user.id)
     try:
         message = await update.reply_message(
-            text="`Processing...`",
+            text="**UploadinG 📤**",
             quote=True,
             disable_web_page_preview=True
         )
@@ -58,11 +58,11 @@ async def media_filter(bot, update):
     reply_markup = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="Open Link", url=response["directLink"]),
-                InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url={response["directLink"]}")
+                InlineKeyboardButton(text="🔹Open Link🔹", url=response["directLink"]),
+                InlineKeyboardButton(text="📤 Share Link 📤", url=f"https://telegram.me/share/url?url={response["directLink"]}")
             ],
             [
-                InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/FayasNoushad")
+                InlineKeyboardButton(text="Updates Channel", url="https://telegram.me/BX_Botz")
             ]
         ]
     )

@@ -81,11 +81,11 @@ async def cb_data(bot, update):
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="🤖 Update Channel", url="https://t.me/BX_Botz"),
-        InlineKeyboardButton(text="🎨 Support Group", url="https://t.me/BXSUPPORT")
+        InlineKeyboardButton("🤖 Update Channel", url="https://t.me/BX_Botz"),
+        InlineKeyboardButton("🎨 Support Group", url="https://t.me/BXSUPPORT")
         ],[
-        InlineKeyboardButton(text="🧩 Other Bots", url="https://t.me/BX_Botz/"),
-        InlineKeyboardButton(text="Close 🔒", callback_data="close")
+        InlineKeyboardButton("🧩 Other Bots", url="https://t.me/BX_Botz/"),
+        InlineKeyboardButton("Close 🔒", callback_data="close")
     )
 
 

@@ -51,9 +51,9 @@ async def media_filter(bot, update):
             disable_web_page_preview=True
         )
         return
-    text += f"**File Name:** `{response["fileName"]}`" + "\n"
-    text += f"**Download Page:** `{response["downloadPage"]}`" + "\n"
-    text += f"**Direct Download Link:** `{response["directLink"]}`" + "\n"
+    text = f"**File Name:** `{response["fileName"]}`" + "\n",
+    text += f"**Download Page:** `{response["downloadPage"]}`" + "\n",
+    text += f"**Direct Download Link:** `{response["directLink"]}`" + "\n",
     text += f"**Info:** `{response["info"]}`"
     reply_markup = InlineKeyboardMarkup(
         [

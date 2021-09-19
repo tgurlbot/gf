@@ -51,15 +51,15 @@ async def media_filter(bot, update):
             disable_web_page_preview=True
         )
         return
-    text = f"**File Name:** `{response['fileName']}`" + "\n",
-    text += f"**Download Page:** `{response['downloadPage']}`" + "\n",
-    text += f"**Direct Download Link:** `{response['directLink']}`" + "\n",
+    text = f"**File Name:** `{response['fileName']}`" + "\n"
+    text += f"**Download Page:** `{response['downloadPage']}`" + "\n"
+    text += f"**Direct Download Link:** `{response['directLink']}`" + "\n"
     text += f"**Info:** `{response['info']}`"
     reply_markup = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="🔹Open Link🔹", url=response["directLink"]),
-                InlineKeyboardButton(text="📤 Share Link 📤", url=f"https://telegram.me/share/url?url={response["directLink"]}")
+                InlineKeyboardButton(text="🔹Open Link🔹", url=response['directLink']),
+                InlineKeyboardButton(text="📤 Share Link 📤", url=f"https://telegram.me/share/url?url={response['directLink']}")
             ],
             [
                 InlineKeyboardButton(text="Updates Channel", url="https://telegram.me/BX_Botz")

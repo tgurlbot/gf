@@ -86,6 +86,7 @@ START_BUTTONS = InlineKeyboardMarkup(
         ],[
         InlineKeyboardButton("🧩 Other Bots", url="https://t.me/BX_Botz/"),
         InlineKeyboardButton("Close 🔒", callback_data="close")
+        ]]
     )
 
 

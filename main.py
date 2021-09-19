@@ -48,7 +48,6 @@ async def media_filter(bot, update):
     except Exception as error:
         await update.reply_text(
             text=f"Error :- <code>{error}</code>",
-            quote=True,
             disable_web_page_preview=True
         )
         return
